@@ -1,4 +1,4 @@
-/* queue.h : Dilwseis sindedemenis listas */
+/* list.h : Dilwseis sindedemenis listas */
 
 #define TRUE 1
 #define FALSE 0
