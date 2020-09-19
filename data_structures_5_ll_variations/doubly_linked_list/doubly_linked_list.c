@@ -62,8 +62,8 @@ int DLL_insert_after(LIST_PTR p,elem x)
 	newnode->next=p->next;
 	newnode->prev=p; 
 	p->next=newnode;
-	if (p->next!=NULL)
-		p->next->prev=newnode; 
+	if (newnode->next!=NULL)
+		newnode->next->prev=newnode; 
 	return TRUE;
 }
 
