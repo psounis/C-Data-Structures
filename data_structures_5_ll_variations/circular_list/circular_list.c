@@ -148,12 +148,8 @@ void CL_print(LIST_PTR head)
 void CL_destroy(LIST_PTR *head)
 {
 	LIST_PTR ptr;
+	elem temp;
 	
-	ptr=(*head)->next;
-	while (ptr!=*head)
-	{
-		free(*head);
-		*head=ptr;
-	}
-	free(*head);
+	while (*head!=NULL)
+		CL_delete_start(head, &temp);
 }
