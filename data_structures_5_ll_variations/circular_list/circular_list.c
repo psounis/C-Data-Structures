@@ -113,7 +113,7 @@ int CL_delete_start(LIST_PTR *head, elem *x)
                       poy deixnei o current */
 int CL_delete_after(LIST_PTR current, elem *x)
 {
-	LIST_PTR prev;
+	LIST_PTR prev = current;
 	
 	while (prev->next!=current)
 		prev=prev->next;
